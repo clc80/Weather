@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="K2w-Ji-rjC">
-                                <rect key="frame" x="143.5" y="413.5" width="127" height="36"/>
+                                <rect key="frame" x="143.5" y="631" width="127" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="5eY-mn-vV0"/>
                                 </constraints>
@@ -51,7 +51,7 @@
                                 <color key="selectedSegmentTintColor" red="0.52156862745098043" green="0.61568627450980395" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="86f-7c-q3W">
-                                <rect key="frame" x="10" y="468.5" width="392.5" height="160"/>
+                                <rect key="frame" x="10" y="686" width="392.5" height="160"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HOW-5t-19H">
                                         <rect key="frame" x="0.0" y="0.0" width="74.5" height="160"/>
@@ -191,13 +191,13 @@
                         <color key="backgroundColor" red="0.91764705882352937" green="0.89411764705882346" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="GVC-0P-IrX" firstAttribute="top" secondItem="ymm-tQ-J7n" secondAttribute="bottom" constant="15" id="2yl-B0-BXb"/>
+                            <constraint firstAttribute="bottom" secondItem="86f-7c-q3W" secondAttribute="bottom" constant="50" id="6qD-Ou-2G8"/>
                             <constraint firstItem="ymm-tQ-J7n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="827-AU-Gp2"/>
                             <constraint firstItem="nxZ-yU-Nou" firstAttribute="centerX" secondItem="GVC-0P-IrX" secondAttribute="centerX" id="9U9-zN-qRg"/>
                             <constraint firstItem="Btc-aR-rnG" firstAttribute="height" secondItem="ARH-Ly-2Bv" secondAttribute="height" multiplier="0.859375" id="BUz-Ir-igd"/>
                             <constraint firstItem="K2w-Ji-rjC" firstAttribute="centerX" secondItem="nxZ-yU-Nou" secondAttribute="centerX" id="BwJ-0F-hBG"/>
                             <constraint firstItem="GVC-0P-IrX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I7E-mU-Gjz"/>
                             <constraint firstItem="ARH-Ly-2Bv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="NtJ-sg-tSU"/>
-                            <constraint firstItem="K2w-Ji-rjC" firstAttribute="top" secondItem="nxZ-yU-Nou" secondAttribute="bottom" constant="15" id="SWT-Eh-s9z"/>
                             <constraint firstItem="86f-7c-q3W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="WPv-MR-wCv"/>
                             <constraint firstItem="ARH-Ly-2Bv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bo3-QO-n12"/>
                             <constraint firstItem="Btc-aR-rnG" firstAttribute="top" secondItem="ARH-Ly-2Bv" secondAttribute="bottom" constant="15" id="fKL-bT-C9w"/>

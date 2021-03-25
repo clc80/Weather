@@ -13,6 +13,8 @@
 		FBAB40B026099435007692DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAB40AE26099435007692DF /* Main.storyboard */; };
 		FBAB40B226099437007692DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBAB40B126099437007692DF /* Assets.xcassets */; };
 		FBAB40B526099437007692DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAB40B326099437007692DF /* LaunchScreen.storyboard */; };
+		FBAB40BF260C1E46007692DF /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB40BE260C1E46007692DF /* Weather.swift */; };
+		FBAB40C4260C20BF007692DF /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB40C3260C20BF007692DF /* NetworkServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FBAB40B126099437007692DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBAB40B426099437007692DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBAB40B626099437007692DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBAB40BE260C1E46007692DF /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		FBAB40C3260C20BF007692DF /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		FBAB40A726099435007692DF /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				FBAB40C2260C20A6007692DF /* Services */,
+				FBAB40BD260C1E31007692DF /* Model */,
 				FBAB40A826099435007692DF /* AppDelegate.swift */,
 				FBAB40AA26099435007692DF /* SceneDelegate.swift */,
 				FBAB40AC26099435007692DF /* ViewController.swift */,
@@ -65,6 +71,22 @@
 				FBAB40B626099437007692DF /* Info.plist */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		FBAB40BD260C1E31007692DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBAB40BE260C1E46007692DF /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBAB40C2260C20A6007692DF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FBAB40C3260C20BF007692DF /* NetworkServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBAB40C4260C20BF007692DF /* NetworkServices.swift in Sources */,
+				FBAB40BF260C1E46007692DF /* Weather.swift in Sources */,
 				FBAB40AD26099435007692DF /* ViewController.swift in Sources */,
 				FBAB40A926099435007692DF /* AppDelegate.swift in Sources */,
 				FBAB40AB26099435007692DF /* SceneDelegate.swift in Sources */,

@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - Welcome
-struct Welcome: Codable {
+// MARK: - Weather
+struct Weather: Codable {
     let current: Current
     let hourly: [Hourly]
     let daily: [Daily]

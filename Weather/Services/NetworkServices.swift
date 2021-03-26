@@ -7,8 +7,6 @@
 
 import Foundation
 
-let API_KEY = "bea1df06bbf6bd07ec0f1bdb0e9b89f3"
-
 let lat = 36.570450
 let long = -121.518547
 let units = "imperial"

@@ -15,6 +15,7 @@
 		FBAB40B526099437007692DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAB40B326099437007692DF /* LaunchScreen.storyboard */; };
 		FBAB40BF260C1E46007692DF /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB40BE260C1E46007692DF /* Weather.swift */; };
 		FBAB40C4260C20BF007692DF /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB40C3260C20BF007692DF /* NetworkServices.swift */; };
+		FBAB40C7260D6A5E007692DF /* API_KEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB40C6260D6A5E007692DF /* API_KEY.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FBAB40B626099437007692DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBAB40BE260C1E46007692DF /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		FBAB40C3260C20BF007692DF /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		FBAB40C6260D6A5E007692DF /* API_KEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_KEY.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				FBAB40C3260C20BF007692DF /* NetworkServices.swift */,
+				FBAB40C6260D6A5E007692DF /* API_KEY.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBAB40C7260D6A5E007692DF /* API_KEY.swift in Sources */,
 				FBAB40C4260C20BF007692DF /* NetworkServices.swift in Sources */,
 				FBAB40BF260C1E46007692DF /* Weather.swift in Sources */,
 				FBAB40AD26099435007692DF /* ViewController.swift in Sources */,

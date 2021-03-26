@@ -62,11 +62,12 @@
 		FBAB40A726099435007692DF /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				FBAB40C2260C20A6007692DF /* Services */,
 				FBAB40BD260C1E31007692DF /* Model */,
+				FBAB40CA260D7F4B007692DF /* View */,
+				FBAB40CB260D7F5E007692DF /* Controller */,
+				FBAB40C2260C20A6007692DF /* Services */,
 				FBAB40A826099435007692DF /* AppDelegate.swift */,
 				FBAB40AA26099435007692DF /* SceneDelegate.swift */,
-				FBAB40AC26099435007692DF /* ViewController.swift */,
 				FBAB40AE26099435007692DF /* Main.storyboard */,
 				FBAB40B126099437007692DF /* Assets.xcassets */,
 				FBAB40B326099437007692DF /* LaunchScreen.storyboard */,
@@ -90,6 +91,21 @@
 				FBAB40C6260D6A5E007692DF /* API_KEY.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		FBAB40CA260D7F4B007692DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBAB40CB260D7F5E007692DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBAB40AC26099435007692DF /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

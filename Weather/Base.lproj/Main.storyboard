@@ -49,6 +49,9 @@
                                     <segment title="Weekly"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" red="0.52156862745098043" green="0.61568627450980395" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="hourlyWeeklySegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="C5K-er-ocX"/>
+                                </connections>
                             </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="86f-7c-q3W">
                                 <rect key="frame" x="10" y="686" width="392.5" height="160"/>
@@ -56,16 +59,16 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HOW-5t-19H">
                                         <rect key="frame" x="0.0" y="0.0" width="74.5" height="160"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Day1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cx0-gw-cuc">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" ambiguous="YES" text="Day1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cx0-gw-cuc">
                                                 <rect key="frame" x="17.5" y="0.0" width="39.5" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lightning" translatesAutoresizingMaskIntoConstraints="NO" id="ocP-NH-ndb">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Lightning" translatesAutoresizingMaskIntoConstraints="NO" id="ocP-NH-ndb">
                                                 <rect key="frame" x="0.0" y="23.5" width="74.5" height="113"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbE-Vb-ofE">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbE-Vb-ofE">
                                                 <rect key="frame" x="16.5" y="136.5" width="41.5" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -208,6 +211,28 @@
                             <constraint firstItem="Btc-aR-rnG" firstAttribute="centerX" secondItem="ARH-Ly-2Bv" secondAttribute="centerX" id="yje-BC-FHn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="conditionLabel" destination="MF5-Ra-0CH" id="CL8-sp-hkv"/>
+                        <outlet property="dateLabel" destination="ARH-Ly-2Bv" id="zS1-nG-Cck"/>
+                        <outlet property="dayHour1" destination="cx0-gw-cuc" id="qZt-y0-R83"/>
+                        <outlet property="dayHour1Image" destination="ocP-NH-ndb" id="eQl-Xb-K5m"/>
+                        <outlet property="dayHour1TempLabel" destination="sbE-Vb-ofE" id="4qe-D7-EL3"/>
+                        <outlet property="dayHour2" destination="6MO-uq-uHY" id="Jd2-X2-v7h"/>
+                        <outlet property="dayHour2Image" destination="b0d-kr-ua4" id="Mpd-vY-by1"/>
+                        <outlet property="dayHour2TempLabel" destination="b7U-Kq-pUB" id="hW5-66-53e"/>
+                        <outlet property="dayHour3" destination="AUw-KI-kmU" id="cbm-5R-UWr"/>
+                        <outlet property="dayHour3Image" destination="bFh-Wl-SYQ" id="zfv-IL-aLt"/>
+                        <outlet property="dayHour3TempLabel" destination="XPo-1m-9yW" id="Hop-H3-OWv"/>
+                        <outlet property="dayHour4" destination="AUw-KI-kmU" id="lLD-CY-0JV"/>
+                        <outlet property="dayHour4Image" destination="JBI-iH-VZ1" id="XhG-wv-Kr6"/>
+                        <outlet property="dayHour4TempLabel" destination="i0E-eC-u3V" id="ZPw-gx-t4X"/>
+                        <outlet property="dayHour5" destination="MRJ-hk-8Rz" id="2qg-dc-Tpp"/>
+                        <outlet property="dayHour5Image" destination="URF-bt-bba" id="9A5-Dj-mvk"/>
+                        <outlet property="dayHour5TempLabel" destination="ktm-iz-19y" id="GZD-cr-xvE"/>
+                        <outlet property="locationLabel" destination="Btc-aR-rnG" id="Cwo-gK-Zgp"/>
+                        <outlet property="temperatureLabel" destination="nxZ-yU-Nou" id="Arb-Z3-jKG"/>
+                        <outlet property="weatherImage" destination="ymm-tQ-J7n" id="tnw-Ob-qQV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
